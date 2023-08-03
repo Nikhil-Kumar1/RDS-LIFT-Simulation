@@ -1,0 +1,24 @@
+.floor{
+  border-bottom: 2px solid red;
+  width: 1000px;
+  height: 100px;
+}
+/* .flooring{
+  border: 2px solid black;
+  height: 40px;
+  width: 900px;
+} */
+.buttons{
+  width: 50px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* .build{
+  border: 2px solid red;
+  height: 100px ;
+} */
+/* add a new property justify content 
+flex */
