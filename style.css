@@ -16,9 +16,38 @@
   justify-content: space-around;
 }
 
+.lift {
+  width: 60px;
+  height: 96px;
+  margin: .5rem 1rem;
+  border: 1px solid black;
+  display: flex;
+}
+
+.l-gate, .r-gate{
+  width: 30px;
+  height: 96px;
+  border: 1px solid black;
+  background-color: cornsilk;
+}
+
+/* #lifts{
+  position: relative;
+  top: 0px;
+  display: flex;
+} */
+
+
+
+
 /* .build{
   border: 2px solid red;
   height: 100px ;
 } */
+/* #render .floors:first-child .buttons .Upbtn{
+  display: none;
+} */
+
 /* add a new property justify content 
 flex */
+
