@@ -1,7 +1,7 @@
 let params = new URLSearchParams(window.location.search);
 let liftsValue = parseInt(params.get("lifts"));
 let floorsValue = parseInt(params.get("floors"));
-console.log({floorsValue,lifts})
+
 
 let form = document.getElementById('form');
 let render = document.getElementById('render');
@@ -13,7 +13,7 @@ for(i=floorsValue; i>0;i--){
   let floordiv = document.createElement("div");
   floordiv.setAttribute("class","floor");
   // let floors = document.createElement("hr");
-  floors.setAttribute("class","flooring")
+  
 
   let buttonContainer = document.createElement("div");
   buttonContainer.setAttribute("class","buttons");
@@ -32,6 +32,7 @@ for(i=floorsValue; i>0;i--){
   render.appendChild(floordiv);
 }
 
+
 for(i=liftsValue; i>0;i--){
   let lift = document.createElement("div");
   lift.setAttribute("class","lift");
@@ -40,7 +41,14 @@ for(i=liftsValue; i>0;i--){
   let Rgate = document.createElement("div");
   Rgate.setAttribute("class","r-gate");
   lift.append(Lgate,Rgate);
-  render.appendChild(lift);
+  const liftArray = Array.from(render.childNodes);
+  
+  liftArray.shift();
+  
+  const groundFloor = liftArray[liftArray.length - 1]
+  console.log(groundFloor.childNodes);
+  groundFloor.append(lift);
+  
 }
 
 

@@ -2,6 +2,7 @@
   border-bottom: 2px solid red;
   width: 1000px;
   height: 100px;
+  display: flex;
 }
 /* .flooring{
   border: 2px solid black;
@@ -22,6 +23,7 @@
   margin: .5rem 1rem;
   border: 1px solid black;
   display: flex;
+  flex-direction: row;
 }
 
 .l-gate, .r-gate{
