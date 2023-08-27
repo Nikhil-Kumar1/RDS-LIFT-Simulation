@@ -1,3 +1,19 @@
+.container{
+  /* border: 2px solid red;
+  text-align: center;
+   */
+   border: 4px solid red;
+   display: block;
+   
+   margin-left: auto;
+   margin-right: auto;
+   width: 40%; 
+   text-align: center;
+
+   background-color: antiquewhite;
+
+}
+
 .floor{
   border-bottom: 2px solid red;
   width: 1000px;
@@ -19,19 +35,41 @@
 
 .lift {
   width: 60px;
-  height: 96px;
-  margin: .5rem 1rem;
+  height: 100px;
+  /* margin: .5rem 1rem; */
+  margin-left: 4px;
   border: 1px solid black;
   display: flex;
   flex-direction: row;
+
+  /* 11/08/23 */
+
+
+
+  /* 10/08/23 */
+  /* transition-property: height;
+  transition-duration: 4s;
+  transition-delay: 1s;
+  transition-timing-function: linear; */
+ 
 }
+
 
 .l-gate, .r-gate{
   width: 30px;
-  height: 96px;
+  height: 100px;
   border: 1px solid black;
   background-color: cornsilk;
+  display: flex;
+  transition: width 2.5s ease;
 }
+
+
+
+/* #render{
+  background-color: brown;
+  position: relative;
+} */
 
 /* #lifts{
   position: relative;
@@ -39,7 +77,9 @@
   display: flex;
 } */
 
-
+/* .hide {
+  display: none;
+} */
 
 
 /* .build{
@@ -53,3 +93,6 @@
 /* add a new property justify content 
 flex */
 
+/* .container{
+  display: none;
+}  */

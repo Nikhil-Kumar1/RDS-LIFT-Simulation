@@ -10,11 +10,13 @@
   <div class="container">
     <h1>LIFT SIMULATION</h1>
     <form action="" onsubmit="false">
-    <input type="number" name="floors" id="floor" placeholder="Enter number of floor">
+      <label for="floor">Enter number of floor:</label>
+    <input type="number" name="floors" id="floor" placeholder="minimum 1">
     <br><br>
-    <input type="number" name="lifts" id="lift" placeholder="Enter number of lift">
+    <label for="lift">Enter number of Lift:</label>
+    <input type="number" name="lifts" id="lift" placeholder="minimum 1" >
     <br><br>
-    <input type="submit" value="Generate">
+    <input type="submit" value="Generate" class="submit">
     </form>
   </div>
   <div id="render">
